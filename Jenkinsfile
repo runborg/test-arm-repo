@@ -17,6 +17,11 @@ pipeline {
                         }
                         steps {
                           echo "Hello from amd64"
+                          sh """
+                            pwd
+                            ls -al
+                            echo "Hello from inside the container amd64
+                          """
                         }
                     }
                     stage('arm64') {
@@ -28,6 +33,11 @@ pipeline {
                         }
                         steps {
                           echo "Hello from arm64"
+                          sh """
+                            pwd
+                            ls -al
+                            echo "Hello from inside the container arm64
+                          """
                         }
                     }
                 }
