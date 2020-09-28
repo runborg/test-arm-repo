@@ -20,7 +20,7 @@ pipeline {
                           sh """
                             pwd
                             ls -al
-                            echo "Hello from inside the container amd64
+                            echo "Hello from inside the container amd64"
                           """
                         }
                     }
@@ -36,7 +36,7 @@ pipeline {
                           sh """
                             pwd
                             ls -al
-                            echo "Hello from inside the container arm64
+                            echo "Hello from inside the container arm64"
                           """
                         }
                     }
